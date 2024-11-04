@@ -1,0 +1,36 @@
+{
+  "tasks": [
+    {
+      "id": 1,
+      "job": "read book",
+      "is-done": false
+    },
+    {
+      "id": 2,
+      "job": "read javascript",
+      "is-done": true
+    },
+    {
+      "id": 3,
+      "job": "read react",
+      "is-done": false
+    }
+  ],
+  "contents": [
+    {
+      "id": 1,
+      "name": "Su Su",
+      "phone": "12345678"
+    },
+    {
+      "id": 2,
+      "name": "Kyaw Kyaw",
+      "phone": "42466438"
+    },
+    {
+      "id": 3,
+      "name": "Hla Hla",
+      "phone": "98344544"
+    }
+  ]
+}

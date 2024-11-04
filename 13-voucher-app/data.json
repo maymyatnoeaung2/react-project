@@ -1,0 +1,269 @@
+{
+  "products": [
+    {
+      "product_name": "Web Hosting Plan 1",
+      "price": 100,
+      "created_at": "2024-11-02T17:45:43.962Z",
+      "id": 1
+    },
+    {
+      "id": 2,
+      "product_name": "React Tutorial Subscription",
+      "price": 50,
+      "created_at": "2024-02-20T10:15:00Z"
+    },
+    {
+      "id": 3,
+      "product_name": "CSS Framework Guide",
+      "price": 30,
+      "created_at": "2024-03-21T11:45:30Z"
+    },
+    {
+      "id": 4,
+      "product_name": "JavaScript Advanced Course",
+      "price": 120,
+      "created_at": "2024-04-22T09:00:00Z"
+    },
+    {
+      "product_name": "API Development Workshop Program",
+      "price": 200,
+      "created_at": "2024-10-08T12:06:34.235Z",
+      "id": 5
+    },
+    {
+      "product_name": "HTML5 & CSS3 eBook ",
+      "price": 400,
+      "created_at": "2024-10-08T12:11:25.074Z",
+      "id": 6
+    },
+    {
+      "id": 7,
+      "product_name": "Frontend Performance Optimization Guide",
+      "price": 75,
+      "created_at": "2024-07-25T08:15:15Z"
+    },
+    {
+      "id": 8,
+      "product_name": "Full-Stack Development Bootcamp",
+      "price": 300,
+      "created_at": "2024-09-26T14:45:00Z"
+    },
+    {
+      "id": 9,
+      "product_name": "Node.js & Express Crash Course",
+      "price": 150,
+      "created_at": "2024-09-27T09:30:30Z"
+    },
+    {
+      "id": 10,
+      "product_name": "Responsive Web Design Workshop",
+      "price": 80,
+      "created_at": "2024-09-28T16:00:00Z"
+    },
+    {
+      "id": 11,
+      "product_name": "Web Accessibility Best Practices",
+      "price": 40,
+      "created_at": "2024-10-29T11:45:00Z"
+    }
+  ],
+  "vouchers": [
+    {
+      "voucher_id": "INV-20241104-4573",
+      "customer_name": "Kyaw Kyaw",
+      "customer_email": "kyawkyaw@gmail.com",
+      "sale_date": "2024-11-04",
+      "all_correct": "true",
+      "records": [
+        {
+          "product": {
+            "id": 3,
+            "product_name": "CSS Framework Guide",
+            "price": 30,
+            "created_at": "2024-03-21T11:45:30Z"
+          },
+          "quantity": "5",
+          "createId_at": "2024-11-04T08:31:50.210Z",
+          "cost": 150,
+          "id": 1730709110210
+        },
+        {
+          "product": {
+            "id": 2,
+            "product_name": "React Tutorial Subscription",
+            "price": 50,
+            "created_at": "2024-02-20T10:15:00Z"
+          },
+          "quantity": "3",
+          "createId_at": "2024-11-04T08:31:54.692Z",
+          "cost": 150,
+          "id": 1730709114692
+        }
+      ],
+      "total": 300,
+      "tax": 21.000000000000004,
+      "netTotal": 321,
+      "id": 4
+    },
+    {
+      "voucher_id": "INV-20241104-0725",
+      "customer_name": "Aung Aung",
+      "customer_email": "aungaung@gmail.com",
+      "sale_date": "2024-11-04",
+      "all_correct": "true",
+      "records": [
+        {
+          "product": {
+            "id": 2,
+            "product_name": "React Tutorial Subscription",
+            "price": 50,
+            "created_at": "2024-02-20T10:15:00Z"
+          },
+          "quantity": "5",
+          "createId_at": "2024-11-04T08:33:55.172Z",
+          "cost": 250,
+          "id": 1730709235172
+        },
+        {
+          "product": {
+            "id": 3,
+            "product_name": "CSS Framework Guide",
+            "price": 30,
+            "created_at": "2024-03-21T11:45:30Z"
+          },
+          "quantity": "5",
+          "createId_at": "2024-11-04T08:37:08.617Z",
+          "cost": 150,
+          "id": 1730709428617
+        }
+      ],
+      "total": 400,
+      "tax": 28.000000000000004,
+      "netTotal": 428,
+      "id": 5
+    },
+    {
+      "voucher_id": "INV-20241104-3550",
+      "customer_name": "Zaw Zaw",
+      "customer_email": "zawzaw@gmail.com",
+      "sale_date": "2024-11-04",
+      "all_correct": "true",
+      "records": [
+        {
+          "product": {
+            "id": 4,
+            "product_name": "JavaScript Advanced Course",
+            "price": 120,
+            "created_at": "2024-04-22T09:00:00Z"
+          },
+          "quantity": 22,
+          "createId_at": "2024-11-04T08:37:44.783Z",
+          "cost": 2640,
+          "id": 1730709464783
+        },
+        {
+          "product": {
+            "product_name": "API Development Workshop Program",
+            "price": 200,
+            "created_at": "2024-10-08T12:06:34.235Z",
+            "id": 5
+          },
+          "quantity": "3",
+          "createId_at": "2024-11-04T08:37:52.861Z",
+          "cost": 600,
+          "id": 1730709472861
+        },
+        {
+          "product": {
+            "id": 7,
+            "product_name": "Frontend Performance Optimization Guide",
+            "price": 75,
+            "created_at": "2024-07-25T08:15:15Z"
+          },
+          "quantity": "3",
+          "createId_at": "2024-11-04T08:38:00.400Z",
+          "cost": 225,
+          "id": 1730709480400
+        }
+      ],
+      "total": 3465,
+      "tax": 242.55,
+      "netTotal": 3707.55,
+      "id": 6
+    },
+    {
+      "voucher_id": "INV-20241104-9529",
+      "customer_name": "zin zin",
+      "customer_email": "zinzin@gmail.com",
+      "sale_date": "2024-11-04",
+      "all_correct": "true",
+      "records": [
+        {
+          "product": {
+            "id": 3,
+            "product_name": "CSS Framework Guide",
+            "price": 30,
+            "created_at": "2024-03-21T11:45:30Z"
+          },
+          "quantity": "5",
+          "createId_at": "2024-11-04T11:00:36.969Z",
+          "cost": 150,
+          "id": 1730718036969
+        },
+        {
+          "product": {
+            "product_name": "API Development Workshop Program",
+            "price": 200,
+            "created_at": "2024-10-08T12:06:34.235Z",
+            "id": 5
+          },
+          "quantity": "5",
+          "createId_at": "2024-11-04T11:00:40.369Z",
+          "cost": 1000,
+          "id": 1730718040369
+        },
+        {
+          "product": {
+            "id": 2,
+            "product_name": "React Tutorial Subscription",
+            "price": 50,
+            "created_at": "2024-02-20T10:15:00Z"
+          },
+          "quantity": "5",
+          "createId_at": "2024-11-04T11:00:43.654Z",
+          "cost": 250,
+          "id": 1730718043654
+        }
+      ],
+      "total": 1400,
+      "tax": 98.00000000000001,
+      "netTotal": 1498,
+      "id": 8
+    },
+    {
+      "voucher_id": "INV-20241104-0218",
+      "customer_name": "Su Su",
+      "customer_email": "kyawkyaw@gmail.com",
+      "sale_date": "2024-11-04",
+      "all_correct": "true",
+      "records": [
+        {
+          "product": {
+            "id": 2,
+            "product_name": "React Tutorial Subscription",
+            "price": 50,
+            "created_at": "2024-02-20T10:15:00Z"
+          },
+          "quantity": "3",
+          "createId_at": "2024-11-04T11:55:26.090Z",
+          "cost": 150,
+          "id": 1730721326090
+        }
+      ],
+      "total": 150,
+      "tax": 10.500000000000002,
+      "netTotal": 160.5,
+      "id": 10
+    }
+  ]
+}

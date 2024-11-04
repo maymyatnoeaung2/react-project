@@ -1,0 +1,8 @@
+{
+    "name":"May Myat Noe Aung",
+    "age":"22",
+    "job":"Software Engineer",
+    "location":"Yangon",
+    "skills":["Python", "C++", "Java", "JavaScript", "HTML", "CSS", "React", "Node.js"]
+
+}
