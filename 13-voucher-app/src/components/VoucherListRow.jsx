@@ -4,10 +4,9 @@ import { TbEdit } from "react-icons/tb";
 import ShowDate from "./ShowDate";
 import { mutate, useSWRConfig } from "swr";
 import toast from "react-hot-toast";
-import { mirage } from 'ldrs'
-
-
-
+import { mirage } from "ldrs";
+import { FaArrowRightLong } from "react-icons/fa6";
+import { Link } from "react-router-dom";
 
 const VoucherListRow = ({
   voucher: { id, voucher_id, customer_name, customer_email, sale_date },
@@ -29,9 +28,9 @@ const VoucherListRow = ({
         },
       }
     );
+    toast.success("Sale deleted successfully");
     mutate(import.meta.env.VITE_API_URL + "/vouchers");
     setIsDeleting(false);
-    toast.success("Sale deleted successfully");
   };
 
   return (
@@ -53,22 +52,22 @@ const VoucherListRow = ({
         <ShowDate timestamp={sale_date} />
       </td>
 
-      <td className="px-6 py-4 gap-2 ">
-        <div
-          onClick={handleDeleteBtn}
-          className="  rounded-md shadow-sm "
-    
-        >
-          <button
+      <td className="px-6 py-4 text-end ">
+        <div className="rounded-md flex items-center justify-end">
+          <Link
+            to={`/voucher/detail/${id}`}
             type="button"
-            className="h-8 w-12 flex justify-center items-center rounded-lg text-sm font-bold text-[#e4affa] bg-white border border-stone-200  hover:bg-stone-100 hover:text-red-700 focus:z-10 focus:ring-1 focus:ring-red-700 focus:text-red-700 dark:bg-stone-800 dark:border-stone-700 dark:text-white dark:hover:text-white dark:hover:bg-stone-700 dark:focus:ring-red-500 dark:focus:text-white"
+            className="h-8 w-12 flex justify-center items-center rounded-s-lg text-sm font-bold text-[#e4affa] bg-white border border-stone-200  hover:bg-stone-100 hover:text-red-700 focus:z-10   dark:bg-stone-800 dark:border-stone-700 dark:text-white dark:hover:text-white dark:hover:bg-stone-700  "
+          >
+            <FaArrowRightLong />
+          </Link>
+          <button
+            onClick={handleDeleteBtn}
+            type="button"
+            className="h-8 w-12 flex justify-center items-center rounded-e-lg text-sm font-bold text-[#e4affa] bg-white border border-stone-200  hover:bg-stone-100 hover:text-red-700 focus:z-10   dark:bg-stone-800 dark:border-stone-700 dark:text-white dark:hover:text-white dark:hover:bg-stone-700  "
           >
             {isDeleting ? (
-          <l-mirage
-          size="40"
-          speed="2.5" 
-          color="red" 
-        ></l-mirage>
+              <l-mirage size="40" speed="2.5" color="red"></l-mirage>
             ) : (
               <GoTrash />
             )}
@@ -80,7 +79,3 @@ const VoucherListRow = ({
 };
 
 export default VoucherListRow;
-
-
-
-

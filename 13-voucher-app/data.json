@@ -69,80 +69,6 @@
   ],
   "vouchers": [
     {
-      "voucher_id": "INV-20241104-4573",
-      "customer_name": "Kyaw Kyaw",
-      "customer_email": "kyawkyaw@gmail.com",
-      "sale_date": "2024-11-04",
-      "all_correct": "true",
-      "records": [
-        {
-          "product": {
-            "id": 3,
-            "product_name": "CSS Framework Guide",
-            "price": 30,
-            "created_at": "2024-03-21T11:45:30Z"
-          },
-          "quantity": "5",
-          "createId_at": "2024-11-04T08:31:50.210Z",
-          "cost": 150,
-          "id": 1730709110210
-        },
-        {
-          "product": {
-            "id": 2,
-            "product_name": "React Tutorial Subscription",
-            "price": 50,
-            "created_at": "2024-02-20T10:15:00Z"
-          },
-          "quantity": "3",
-          "createId_at": "2024-11-04T08:31:54.692Z",
-          "cost": 150,
-          "id": 1730709114692
-        }
-      ],
-      "total": 300,
-      "tax": 21.000000000000004,
-      "netTotal": 321,
-      "id": 4
-    },
-    {
-      "voucher_id": "INV-20241104-0725",
-      "customer_name": "Aung Aung",
-      "customer_email": "aungaung@gmail.com",
-      "sale_date": "2024-11-04",
-      "all_correct": "true",
-      "records": [
-        {
-          "product": {
-            "id": 2,
-            "product_name": "React Tutorial Subscription",
-            "price": 50,
-            "created_at": "2024-02-20T10:15:00Z"
-          },
-          "quantity": "5",
-          "createId_at": "2024-11-04T08:33:55.172Z",
-          "cost": 250,
-          "id": 1730709235172
-        },
-        {
-          "product": {
-            "id": 3,
-            "product_name": "CSS Framework Guide",
-            "price": 30,
-            "created_at": "2024-03-21T11:45:30Z"
-          },
-          "quantity": "5",
-          "createId_at": "2024-11-04T08:37:08.617Z",
-          "cost": 150,
-          "id": 1730709428617
-        }
-      ],
-      "total": 400,
-      "tax": 28.000000000000004,
-      "netTotal": 428,
-      "id": 5
-    },
-    {
       "voucher_id": "INV-20241104-3550",
       "customer_name": "Zaw Zaw",
       "customer_email": "zawzaw@gmail.com",
@@ -192,23 +118,297 @@
       "id": 6
     },
     {
-      "voucher_id": "INV-20241104-9529",
-      "customer_name": "zin zin",
-      "customer_email": "zinzin@gmail.com",
-      "sale_date": "2024-11-04",
+      "voucher_id": "INV-20241105-2709",
+      "customer_name": "Kyaw Kyaw",
+      "customer_email": "kyawkyaw@gmail.com",
+      "sale_date": "2024-11-05",
       "all_correct": "true",
       "records": [
         {
           "product": {
-            "id": 3,
-            "product_name": "CSS Framework Guide",
-            "price": 30,
-            "created_at": "2024-03-21T11:45:30Z"
+            "product_name": "HTML5 & CSS3 eBook ",
+            "price": 400,
+            "created_at": "2024-10-08T12:11:25.074Z",
+            "id": 6
           },
           "quantity": "5",
-          "createId_at": "2024-11-04T11:00:36.969Z",
-          "cost": 150,
-          "id": 1730718036969
+          "createId_at": "2024-11-05T13:07:35.555Z",
+          "cost": 2000,
+          "id": 1730812055555
+        }
+      ],
+      "total": 2000,
+      "tax": 140,
+      "netTotal": 2140,
+      "id": 17
+    },
+    {
+      "voucher_id": "INV-20241105-0983",
+      "customer_name": "Su Su",
+      "customer_email": "susu@gmail.com",
+      "sale_date": "2024-11-05",
+      "all_correct": "true",
+      "records": [
+        {
+          "product": {
+            "id": 8,
+            "product_name": "Full-Stack Development Bootcamp",
+            "price": 300,
+            "created_at": "2024-09-26T14:45:00Z"
+          },
+          "quantity": "3",
+          "createId_at": "2024-11-05T15:14:47.900Z",
+          "cost": 900,
+          "id": 1730819687900
+        }
+      ],
+      "total": 900,
+      "tax": 63.00000000000001,
+      "netTotal": 963,
+      "id": 26
+    },
+    {
+      "voucher_id": "INV-20241105-6596",
+      "customer_name": "zin zin",
+      "customer_email": "zinzin@gmail.com",
+      "sale_date": "2024-11-05",
+      "all_correct": "true",
+      "records": [
+        {
+          "product": {
+            "id": 9,
+            "product_name": "Node.js & Express Crash Course",
+            "price": 150,
+            "created_at": "2024-09-27T09:30:30Z"
+          },
+          "quantity": "5",
+          "createId_at": "2024-11-05T15:14:57.017Z",
+          "cost": 750,
+          "id": 1730819697017
+        }
+      ],
+      "total": 750,
+      "tax": 52.50000000000001,
+      "netTotal": 802.5,
+      "id": 27
+    },
+    {
+      "voucher_id": "INV-20241105-7422",
+      "customer_name": "zin zin",
+      "customer_email": "zinzin@gmail.com",
+      "sale_date": "2024-11-05",
+      "all_correct": "true",
+      "records": [
+        {
+          "product": {
+            "product_name": "HTML5 & CSS3 eBook ",
+            "price": 400,
+            "created_at": "2024-10-08T12:11:25.074Z",
+            "id": 6
+          },
+          "quantity": "3",
+          "createId_at": "2024-11-05T15:15:14.696Z",
+          "cost": 1200,
+          "id": 1730819714696
+        }
+      ],
+      "total": 1200,
+      "tax": 84.00000000000001,
+      "netTotal": 1284,
+      "id": 29
+    },
+    {
+      "voucher_id": "INV-20241105-6423",
+      "customer_name": "Kyaw Kyaw",
+      "customer_email": "kyawkyaw@gmail.com",
+      "sale_date": "2024-11-05",
+      "all_correct": "true",
+      "records": [
+        {
+          "product": {
+            "product_name": "API Development Workshop Program",
+            "price": 200,
+            "created_at": "2024-10-08T12:06:34.235Z",
+            "id": 5
+          },
+          "quantity": "5",
+          "createId_at": "2024-11-05T15:15:24.334Z",
+          "cost": 1000,
+          "id": 1730819724334
+        }
+      ],
+      "total": 1000,
+      "tax": 70,
+      "netTotal": 1070,
+      "id": 30
+    },
+    {
+      "voucher_id": "INV-20241105-7531",
+      "customer_name": "Su Su",
+      "customer_email": "susu@gmail.com",
+      "sale_date": "2024-11-05",
+      "all_correct": "true",
+      "records": [
+        {
+          "product": {
+            "id": 4,
+            "product_name": "JavaScript Advanced Course",
+            "price": 120,
+            "created_at": "2024-04-22T09:00:00Z"
+          },
+          "quantity": "3",
+          "createId_at": "2024-11-05T15:15:43.653Z",
+          "cost": 360,
+          "id": 1730819743653
+        }
+      ],
+      "total": 360,
+      "tax": 25.200000000000003,
+      "netTotal": 385.2,
+      "id": 32
+    },
+    {
+      "voucher_id": "INV-20241105-3064",
+      "customer_name": "zin zin",
+      "customer_email": "zinzin@gmail.com",
+      "sale_date": "2024-11-05",
+      "all_correct": "true",
+      "records": [
+        {
+          "product": {
+            "id": 9,
+            "product_name": "Node.js & Express Crash Course",
+            "price": 150,
+            "created_at": "2024-09-27T09:30:30Z"
+          },
+          "quantity": "19",
+          "createId_at": "2024-11-05T15:15:54.312Z",
+          "cost": 2850,
+          "id": 1730819754312
+        }
+      ],
+      "total": 2850,
+      "tax": 199.50000000000003,
+      "netTotal": 3049.5,
+      "id": 33
+    },
+    {
+      "voucher_id": "INV-20241107-6253",
+      "customer_name": "Su Su",
+      "customer_email": "susu@gmail.com",
+      "sale_date": "2024-11-07",
+      "redirect_to_detail": "true",
+      "all_correct": "true",
+      "records": [
+        {
+          "product": {
+            "id": 4,
+            "product_name": "JavaScript Advanced Course",
+            "price": 120,
+            "created_at": "2024-04-22T09:00:00Z"
+          },
+          "quantity": "5",
+          "createId_at": "2024-11-07T14:18:14.641Z",
+          "cost": 600,
+          "id": 1730989094641
+        },
+        {
+          "product": {
+            "product_name": "HTML5 & CSS3 eBook ",
+            "price": 400,
+            "created_at": "2024-10-08T12:11:25.074Z",
+            "id": 6
+          },
+          "quantity": "19",
+          "createId_at": "2024-11-07T14:18:18.411Z",
+          "cost": 7600,
+          "id": 1730989098411
+        }
+      ],
+      "total": 8200,
+      "tax": 574,
+      "netTotal": 8774,
+      "id": 39
+    },
+    {
+      "voucher_id": "INV-20241109-9422",
+      "customer_name": "Kyaw Kyaw",
+      "customer_email": "kyawkyaw@gmail.com",
+      "sale_date": "2024-11-08",
+      "redirect_to_detail": "true",
+      "all_correct": "true",
+      "records": [
+        {
+          "product": {
+            "id": 4,
+            "product_name": "JavaScript Advanced Course",
+            "price": 120,
+            "created_at": "2024-04-22T09:00:00Z"
+          },
+          "quantity": "5",
+          "createId_at": "2024-11-08T20:22:15.066Z",
+          "cost": 600,
+          "id": 1731097335066
+        },
+        {
+          "product": {
+            "id": 8,
+            "product_name": "Full-Stack Development Bootcamp",
+            "price": 300,
+            "created_at": "2024-09-26T14:45:00Z"
+          },
+          "quantity": "3",
+          "createId_at": "2024-11-08T20:22:18.087Z",
+          "cost": 900,
+          "id": 1731097338088
+        },
+        {
+          "product": {
+            "id": 7,
+            "product_name": "Frontend Performance Optimization Guide",
+            "price": 75,
+            "created_at": "2024-07-25T08:15:15Z"
+          },
+          "quantity": "5",
+          "createId_at": "2024-11-08T20:22:21.048Z",
+          "cost": 375,
+          "id": 1731097341048
+        },
+        {
+          "product": {
+            "product_name": "Web Hosting Plan 1",
+            "price": 100,
+            "created_at": "2024-11-02T17:45:43.962Z",
+            "id": 1
+          },
+          "quantity": "5",
+          "createId_at": "2024-11-08T20:22:24.165Z",
+          "cost": 500,
+          "id": 1731097344165
+        },
+        {
+          "product": {
+            "product_name": "HTML5 & CSS3 eBook ",
+            "price": 400,
+            "created_at": "2024-10-08T12:11:25.074Z",
+            "id": 6
+          },
+          "quantity": 10,
+          "createId_at": "2024-11-08T20:22:28.398Z",
+          "cost": 4000,
+          "id": 1731097348398
+        },
+        {
+          "product": {
+            "id": 11,
+            "product_name": "Web Accessibility Best Practices",
+            "price": 40,
+            "created_at": "2024-10-29T11:45:00Z"
+          },
+          "quantity": "5",
+          "createId_at": "2024-11-08T20:22:34.332Z",
+          "cost": 200,
+          "id": 1731097354332
         },
         {
           "product": {
@@ -218,52 +418,15 @@
             "id": 5
           },
           "quantity": "5",
-          "createId_at": "2024-11-04T11:00:40.369Z",
+          "createId_at": "2024-11-08T20:22:42.218Z",
           "cost": 1000,
-          "id": 1730718040369
-        },
-        {
-          "product": {
-            "id": 2,
-            "product_name": "React Tutorial Subscription",
-            "price": 50,
-            "created_at": "2024-02-20T10:15:00Z"
-          },
-          "quantity": "5",
-          "createId_at": "2024-11-04T11:00:43.654Z",
-          "cost": 250,
-          "id": 1730718043654
+          "id": 1731097362218
         }
       ],
-      "total": 1400,
-      "tax": 98.00000000000001,
-      "netTotal": 1498,
-      "id": 8
-    },
-    {
-      "voucher_id": "INV-20241104-0218",
-      "customer_name": "Su Su",
-      "customer_email": "kyawkyaw@gmail.com",
-      "sale_date": "2024-11-04",
-      "all_correct": "true",
-      "records": [
-        {
-          "product": {
-            "id": 2,
-            "product_name": "React Tutorial Subscription",
-            "price": 50,
-            "created_at": "2024-02-20T10:15:00Z"
-          },
-          "quantity": "3",
-          "createId_at": "2024-11-04T11:55:26.090Z",
-          "cost": 150,
-          "id": 1730721326090
-        }
-      ],
-      "total": 150,
-      "tax": 10.500000000000002,
-      "netTotal": 160.5,
-      "id": 10
+      "total": 7575,
+      "tax": 530.25,
+      "netTotal": 8105.25,
+      "id": 40
     }
   ]
 }

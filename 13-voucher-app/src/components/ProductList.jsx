@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef, useState } from "react";
 import { FaPlus } from "react-icons/fa";
 import { HiMagnifyingGlass } from "react-icons/hi2";
 import useSWR from "swr";
@@ -6,15 +6,40 @@ import ProductListSkeletonLoader from "./ProductListSkeletonLoader";
 import ProductListEmptyStage from "./ProductListEmptyStage";
 import ProductRow from "./ProductRow";
 import { Link } from "react-router-dom";
+import { debounce } from "lodash";
+import { set } from "react-hook-form";
+import { IoCloseCircleOutline } from "react-icons/io5";
 
 const fetcher = (url) => fetch(url).then((res) => res.json());
 const ProductList = () => {
+  const [searchProduct, setSearchProduct] = useState("");
+  const searchInputRef = useRef();
+
+
   const { data, isLoading, error } = useSWR(
-    import.meta.env.VITE_API_URL + "/products",
+    searchProduct
+      ? `${
+          import.meta.env.VITE_API_URL
+        }/products?product_name_like=${searchProduct}`
+      : `${import.meta.env.VITE_API_URL}/products`,
     fetcher
   );
 
-// {isLoading ? console.log("Loading...") : console.log(data)}
+  const handleClearBtn = () => {
+    setSearchProduct((searchInputRef.current.value = ""));
+  };
+
+
+  // {
+  //   isLoading ? console.log("loading") : console.log(data);
+  // }
+
+  const handleSearch =debounce( (e) => {
+    setSearchProduct(e.target.value);
+  },500)
+
+
+  // {isLoading ? console.log("Loading...") : console.log(data)}
 
   return (
     <div>
@@ -28,13 +53,26 @@ const ProductList = () => {
             <input
               type="text"
               id="input-group-1"
+              ref={searchInputRef}
+              onChange={handleSearch}
               className="bg-stone-50 border border-stone-300 text-stone-900 text-sm rounded-lg focus:ring-[#ebc0fd] focus:border-[#ebc0fd] block w-full ps-10 p-2.5  dark:bg-stone-700 dark:border-stone-600 dark:placeholder-stone-400 dark:text-white dark:focus:ring-[#ebc0fd] dark:focus:border-[#ebc0fd]"
               placeholder="Search for products"
             />
+               {searchProduct && (
+              <button
+                onClick={handleClearBtn}
+                className="absolute top-0 bottom-0 my-auto right-3"
+              >
+                <IoCloseCircleOutline className="text-red-600 size-5" />
+              </button>
+            )}
           </div>
         </div>
         <div>
-          <Link to="/product/create" className="flex justify-center items-center gap-3 text-white bg-[#ebc0fd] hover:bg-[#e7b5fc] focus:ring-4 focus:outline-none focus:ring-[#e29dff] font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-[#ebc0fd] dark:hover:bg-[#ebc0fd] dark:focus:ring-[#e4affa]">
+          <Link
+            to="/product/create"
+            className="flex justify-center items-center gap-3 text-white bg-[#ebc0fd] hover:bg-[#e7b5fc] focus:ring-4 focus:outline-none focus:ring-[#e29dff] font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-[#ebc0fd] dark:hover:bg-[#ebc0fd] dark:focus:ring-[#e4affa]"
+          >
             Add new Product
             <FaPlus />
           </Link>
@@ -69,7 +107,9 @@ const ProductList = () => {
             ) : data.length === 0 ? (
               <ProductListEmptyStage />
             ) : (
-              data.map((product) => <ProductRow key={product.id} product={product}/>)
+              data.map((product) => (
+                <ProductRow key={product.id} product={product} />
+              ))
             )}
           </tbody>
         </table>

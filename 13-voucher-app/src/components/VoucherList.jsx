@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useRef } from "react";
+import { useState } from "react";
 import { FaPlus } from "react-icons/fa";
 import { GoTrash } from "react-icons/go";
 import { HiComputerDesktop, HiMagnifyingGlass } from "react-icons/hi2";
@@ -7,14 +8,35 @@ import { Link, useFetcher } from "react-router-dom";
 import useSWR, { useSWRConfig } from "swr";
 import VoucherListRow from "./VoucherListRow";
 import VoucherListSkeletonLoader from "./VoucherListSkeletonLoader";
+import { set } from "react-hook-form";
+import { debounce } from "lodash";
+import { IoCloseCircleOutline } from "react-icons/io5";
 
 const fetcher = (url) => fetch(url).then((res) => res.json());
 
 const VoucherList = () => {
+  const [search, setSearch] = useState("");
+  const searchInputRef = useRef();
+
   const { isLoading, error, data } = useSWR(
-    import.meta.env.VITE_API_URL + "/vouchers",
+    search
+      ? `${import.meta.env.VITE_API_URL}/vouchers?voucher_id_like=${search}`
+      : `${import.meta.env.VITE_API_URL}/vouchers`,
     fetcher
   );
+
+  // const handleSearch = (e) => {
+  //   setSearch(e.target.value);
+  //   console.log(e.target.value);
+  // };
+
+  const handleSearch = debounce((e) => {
+    setSearch(e.target.value);
+  }, 500);
+
+  const handleClearBtn = () => {
+    setSearch((searchInputRef.current.value = ""));
+  };
 
   return (
     <div>
@@ -23,14 +45,24 @@ const VoucherList = () => {
         <div className="">
           <div className="relative mb-6">
             <div className="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none ">
-              <HiMagnifyingGlass className="w-4 h-4 text-stone-500 dark:text-stone-400 " />
+              <HiMagnifyingGlass className="size-5 text-stone-500 dark:text-stone-400 " />
             </div>
             <input
+              onChange={handleSearch}
+              ref={searchInputRef}
               type="text"
               id="input-group-1"
               className="bg-stone-50 border border-stone-300 text-stone-900 text-sm rounded-lg focus:ring-[#ebc0fd] focus:border-[#ebc0fd] block w-full ps-10 p-2.5  dark:bg-stone-700 dark:border-stone-600 dark:placeholder-stone-400 dark:text-white dark:focus:ring-[#ebc0fd] dark:focus:border-[#ebc0fd]"
               placeholder="Search Voucher"
             />
+            {search && (
+              <button
+                onClick={handleClearBtn}
+                className="absolute top-0 bottom-0 my-auto right-3"
+              >
+                <IoCloseCircleOutline className="text-red-600 size-5" />
+              </button>
+            )}
           </div>
         </div>
         <div>
@@ -67,15 +99,17 @@ const VoucherList = () => {
             </tr>
           </thead>
           <tbody>
-            <tr className=" odd:bg-white odd:dark:bg-stone-900 even:bg-stone-50 even:dark:bg-stone-800 border-b dark:border-stone-700 hidden last:block">
-              <td colSpan={5} className="px-6 py-4 ">
+            <tr className="w-full odd:bg-white odd:dark:bg-stone-900 even:bg-stone-50 even:dark:bg-stone-800 border-b dark:border-stone-700 hidden last:table-row">
+              <td colSpan={5} className="px-6 py-4 text-center">
                 There is no Voucher...
               </td>
             </tr>
             {isLoading ? (
               <VoucherListSkeletonLoader />
             ) : (
-             data?.map((voucher,index) =>  <VoucherListRow key={index} voucher={voucher} />)
+              data?.map((voucher, index) => (
+                <VoucherListRow key={index} voucher={voucher} />
+              ))
             )}
           </tbody>
         </table>

@@ -7,6 +7,7 @@ import DashboardPage from "./pages/DashboardPage";
 import VoucherPage from "./pages/VoucherPage";
 import ProductCreatePage from "./pages/ProductCreatePage";
 import ProductEditPage from "./pages/ProductEditPage";
+import VoucherDetailsPage from "./pages/VoucherDetailsPage";
 
 
 
@@ -40,6 +41,10 @@ const router = createBrowserRouter([
       {
         path: "/voucher",
         element: <VoucherPage />,
+      },
+      {
+        path: "/voucher/detail/:id",
+        element: <VoucherDetailsPage />,
       },
     ],
   },
